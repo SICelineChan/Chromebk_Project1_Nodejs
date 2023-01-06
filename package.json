@@ -1,0 +1,31 @@
+{
+  "name": "chromebk_project1_nodejs",
+  "version": "1.0.0",
+  "description": "Using chromebook and linux to rebuild project one with backend and nodejs!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SICelineChan/Chromebk_Project1_Nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SICelineChan/Chromebk_Project1_Nodejs/issues"
+  },
+  "homepage": "https://github.com/SICelineChan/Chromebk_Project1_Nodejs#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
