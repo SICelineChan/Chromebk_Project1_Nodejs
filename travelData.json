@@ -1,0 +1,32 @@
+[
+    {
+      "continent": "Asia",
+      "country": "South Korea",
+      "city": "Seoul",
+      "datetravelfrom": "2015-06-12"
+    },
+    {
+      "continent": "Asia",
+      "country": "Japan",
+      "city": "Osaka",
+      "datetravelfrom": "2015-07-13"
+    },
+    {
+      "continent": "Europe",
+      "country": "Norway",
+      "city": "Bergen",
+      "datetravelfrom": "2015-04-16"
+    },
+    {
+      "continent": "Europe",
+      "country": "Portugal",
+      "city": "Funchal",
+      "datetravelfrom": "2019-10-09"
+    },
+    {
+      "continent": "North America",
+      "country": "Mexico",
+      "city": "Mexico City",
+      "datetravelfrom": "2017-05-18"
+    }
+  ]
