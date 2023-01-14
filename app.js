@@ -25,3 +25,4 @@ app.get("/", function(req, res){
 app.listen(port, function (){
     console.log(`now listening on port ${port}`);
 });
+//do npm run dev
