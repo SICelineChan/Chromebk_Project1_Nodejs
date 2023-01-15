@@ -1,0 +1,7 @@
+.pic {
+    background-image: url("images/lagoon.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  
+  }

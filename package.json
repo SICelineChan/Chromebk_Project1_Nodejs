@@ -2,7 +2,7 @@
   "name": "chromebk_project1_nodejs",
   "version": "1.0.0",
   "description": "Using chromebook and linux to rebuild project one with backend and nodejs!",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/SICelineChan/Chromebk_Project1_Nodejs#readme",
   "dependencies": {
+    "bootstrap-icons": "^1.10.3",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
