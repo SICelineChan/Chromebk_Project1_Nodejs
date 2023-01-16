@@ -10,63 +10,77 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Travelling noodles</title>
 </head>
-<body>
+<style>
+  body {
+  background-image: url("images/bglagoon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+</style>
+<body class="d-flex h-100 text-center">
+    
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    
+    <header class="mb-auto py-3">
+      <div>
+        <nav class="nav nav-masthead justify-content-center float-md-start ">
+          <a class="text-light fw-bold mx-md-3 py-3 active text-decoration-none" aria-current="page" href="/">Dashboard</a>
+          <a class="text-light fw-bold mx-md-3 py-3 text-decoration-none" href="/data">Databases</a>
+          <a class="text-light fw-bold mx-md-3  py-3 text-decoration-none" href="#">Contact</a>
+        </nav>
+        
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <i class="bi bi-person-fill-lock mx-auto mx-2 px-4" style="font-size: 1.5rem; color:white;"></i></a>
+          
+          <a class="btn btn-info mx-2 px-4" href="#">Login </a>
+          <a class="btn btn-primary mx-2 px-4" href="#" role="button">Sign Up </a>
+          
+        </nav>
+        <a href="/">
+        <i class="bi bi-robot" style="font-size: 2rem; color: lightgrey;"></i>
+      </a>
+      </div>
+    </header>
+    
+    
+  
+    <main class="lead py-xxl-5 mb-xl-4 text-center">
+      <h1>Eat Noodles and Go Travel</h1>
+      <p class="lead py-xxl-4 px-xl-4 text-center container-fluid">Another project that is now using node.js and more backend!</p>
+      <p class="lead py-xxl-4 px-xl-2 text-center container-fluid">more to follow!</p>
+      <p class="lead py-lg-3">
+        <a href="/info" class="btn btn-lg btn-secondary fw-bold border-white bg-dark">Let's Roll!</a>
+      </p>
+    </main>
+  
+   
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-white">© 2023 celine S I chan</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <i class="bi bi-robot" style="font-size: 1.5rem; color:azure;"></i>
+      </a>
+  
+      <ul class="nav col-md-4 d-flex align-items-center justify-content-center">
+        <a href="#" class="nav-link text-white"><li class="nav-item bi bi-github" style="font-size: 2rem;"></li></a>
+        <a href="#" class="nav-link text-white"><li class="nav-item bi-google" style="font-size: 2rem;"></li></a>
+        <a href="#" class="nav-link text-white"><li class="nav-item bi-steam" style="font-size: 2rem;"></li></a>
+       
+      </ul>
+    </footer>
 
-      <body class="d-flex h-100 text-center">
+  </div>
+  
+  
+  
     
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-          <header class="mb-auto">
-            <div>
-              <h3 class="float-md-start mb-0">Travelling Noodles </h3>
-              <nav class="nav nav-masthead justify-content-center float-md-end">
-                <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="/">Home</a>
-                <a class="nav-link fw-bold py-1 px-0" href="/info">Info</a>
-                <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-              </nav>
-            </div>
-          </header>
-        
-          <main class="px-3" id="mainPic" >
-            <h1>Eat Noodles and go travel</h1>
-            <div class="text-center">
-                <img src="images/noodles.jpg" class="rounded" alt="...">
-              </div>
-              <div class="text-center">
-                <img src="images/lagoon.jpg" class="rounded" alt="...">
-              </div>
-            
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
-              <a href="/dashboard" class="btn btn-lg btn-secondary fw-bold border-white text-bg-dark">Let's roll</a>
-            </p>
-            
-          </main>
-        
-        
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-              <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-                </a>
-                <span class="mb-3 mb-md-0 text-muted">© S I Celine Chan 2023</span>
-              </div>
-          
-              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-twitter"></i></svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-instagram"></i></svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><i class="bi bi-github"></i></svg></a></li>
-              </ul>
-            </footer>
-        
-          </div>
-        
-        
-        
-            
-          
-        
-        
+  
+  
+      
     
-    
-</body>
+  
+  </body>
+
+     
 </html>

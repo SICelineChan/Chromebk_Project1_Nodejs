@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const testMongoDb = require("./testMongoDb");
 //const router = require("./routes/router");
 
 const travelled = require("./json /travelData.json");
@@ -25,6 +26,12 @@ app.get("/", function(req, res){
 app.get("/info", function(req,res){
     res.render("info");
 })
+
+app.get("/data", function (req, res) {
+    testMongoDb.findAll(function (result) {
+      res.json(result);
+    });
+  });
 
 app.listen(port, function (){
     console.log(`now listening on port ${port}`);

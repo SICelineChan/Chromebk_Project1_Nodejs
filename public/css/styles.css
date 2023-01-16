@@ -1,8 +1,7 @@
 body {
-    background-color: lightgreen;
+  background-image: url("images/bglagoon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
 }
-#mainPic {
-  background-image: url("images/lagoon.jpg") ;
-  
 
-}
