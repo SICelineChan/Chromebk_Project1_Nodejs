@@ -16,12 +16,6 @@ app.use(router);
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
-//app.get("/", function(req, res){
-
-    //const templateData = {places : travelled,};
-    //res.render("main", templateData);
-//})
-
 app.get("/data", function(req,res){
 
   const templateData = {
