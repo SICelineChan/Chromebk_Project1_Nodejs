@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 //const testMongoDb = require("./testMongoDb");
-//const router = require("./routes/router");
+const router = require("./routes/router");
 
 const travelled = require("./json /travelData.json");
 
@@ -11,17 +11,16 @@ app.use(cors());
 const port = 3000;
 
 app.use(express.json());
-//app.use(router);
+app.use(router);
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
-app.get("/", function(req, res){
+//app.get("/", function(req, res){
 
-    const templateData = {places : travelled,};
-    //console.log(travelled);
-    res.render("main", templateData);
-})
+    //const templateData = {places : travelled,};
+    //res.render("main", templateData);
+//})
 
 app.get("/data", function(req,res){
 
