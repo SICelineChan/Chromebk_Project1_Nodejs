@@ -3,30 +3,35 @@
       "continent": "Asia",
       "country": "South Korea",
       "city": "Seoul",
-      "datetravelfrom": "2015-06-12"
+      "datetravelfrom": "2015-06-12",
+      "datetravelto": "2015-07-12"
     },
     {
       "continent": "Asia",
       "country": "Japan",
       "city": "Osaka",
-      "datetravelfrom": "2015-07-13"
+      "datetravelfrom": "2015-07-13",
+      "datetravelto": "2015-08-22"
     },
     {
       "continent": "Europe",
       "country": "Norway",
       "city": "Bergen",
-      "datetravelfrom": "2015-04-16"
+      "datetravelfrom": "2015-04-16",
+      "datetravelto": "2015-04-23"
     },
     {
       "continent": "Europe",
       "country": "Portugal",
       "city": "Funchal",
-      "datetravelfrom": "2019-10-09"
+      "datetravelfrom": "2019-10-09",
+      "datetravelto": "2019-10-14"
     },
     {
       "continent": "North America",
       "country": "Mexico",
       "city": "Mexico City",
-      "datetravelfrom": "2017-05-18"
+      "datetravelfrom": "2017-05-18",
+      "datetravelto": "2017-06-07"
     }
   ]

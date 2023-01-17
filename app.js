@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const testMongoDb = require("./testMongoDb");
+//const testMongoDb = require("./testMongoDb");
 //const router = require("./routes/router");
 
 const travelled = require("./json /travelData.json");
@@ -18,19 +18,30 @@ app.set("view engine", "ejs");
 
 app.get("/", function(req, res){
 
-    const templateData = {countries : travelled,};
+    const templateData = {places : travelled,};
     //console.log(travelled);
-    res.render("main.ejs", templateData);
+    res.render("main", templateData);
 })
 
-app.get("/info", function(req,res){
-    res.render("info");
+app.get("/data", function(req,res){
+
+  const templateData = {
+    places : travelled,
+  }
+    res.render("databases", templateData);
 })
 
-app.get("/data", function (req, res) {
-    testMongoDb.findAll(function (result) {
-      res.json(result);
-    });
+app.get("/info", function (req, res) {
+  const index = req.query.index || 1
+  console.log(index);
+
+  const templateData = {
+    places: travelled[index],
+    
+  };
+  
+console.log(index);
+    res.render("info", templateData);
   });
 
 app.listen(port, function (){

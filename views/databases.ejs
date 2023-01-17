@@ -1,4 +1,4 @@
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,9 +18,16 @@
     <main class="lead py-xxl-5 mb-xl-4 text-center">
     <H1>Testing databases with node js and MongoDb</H1>
     <h2>Mongo db database</h2>
+    <div class="container">
+        <ol>
+        <% for (let i = 0; i < places.length; i++) {  %>
+        <a href="./info?index=<%=i%>"><li><%=places[i].city %></li></a>   
+        <% } %>
+    </ol>
+    </div>
 </main>
 
     <%- include("partials/footer.ejs") %>
 </div>
 </body>
-</html>-->
+</html>
