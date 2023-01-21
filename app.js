@@ -3,12 +3,13 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const testMongoDb = require("./testMongoDb");
+const db = require("./dbs/sqlDb");
 const router = require("./routes/router");
 
 const travelled = require("./json /travelData.json");
 
 app.use(cors());
-const port = 3000;
+const port = process.env.DB_PORT || 3000;
 
 app.use(express.json());
 app.use(router);
@@ -32,14 +33,18 @@ app.get("/info", function (req, res) {
     places: travelled[index],
     
   };
-  
-console.log(index);
+//console.log(index);
     res.render("info", templateData);
   });
 
-app.get("/magic", async function (req,res) {
+app.get("/mongo", async function (req,res) {
   testMongoDb.findAll(function (result){
     res.json(result);
+  })
+})
+app.get("/sql", function (req, res){
+  db.getAllUsers(function (results){
+    res.json(results);
   })
 })
 
