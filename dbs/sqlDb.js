@@ -21,7 +21,22 @@ function getAllUsers(callback){
     });
     
 }
+function insertNewUser(userData, callback) {
+    const queryString = "INSERT INTO users (name, username, password)";
+    const params = [
+        userData.name,
+        userData.username,
+        userData.password,
+    ];
+    
+    connection.query(queryString, params, function (err, result){
+        console.log(result);
+        callback(result);
+    });
+}
+
 
 module.exports = {
     getAllUsers,
+    insertNewUser,
 };

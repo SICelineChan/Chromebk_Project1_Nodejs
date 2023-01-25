@@ -5,7 +5,7 @@ const cors = require("cors");
 const testMongoDb = require("./testMongoDb");
 const db = require("./dbs/sqlDb");
 const router = require("./routes/router");
-
+const userController = require ("./controllers/users");
 const travelled = require("./json /travelData.json");
 
 app.use(cors());
@@ -47,6 +47,9 @@ app.get("/sql", function (req, res){
     res.json(results);
   })
 })
+app.post("/sql", userController.addUser);
+
+
 
 app.listen(port, function (){
     console.log(`now listening on port ${port}`);
