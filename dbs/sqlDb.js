@@ -28,9 +28,11 @@ function insertNewUser(userData, callback) {
         userData.username,
         userData.password,
     ];
+    console.log(userData);
     
     connection.query(queryString, params, function (err, result){
         console.log(result);
+        console.log(params);
         callback(result);
     });
 }

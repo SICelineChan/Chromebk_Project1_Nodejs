@@ -7,6 +7,7 @@ function addUser (req, res) {
         password: req.body.password,
     };
     console.log(newUser);
+    console.log(res);
 
   usersDB.insertNewUser(newUser, function (result){
     console.log(`anything new ${newUser}`)
