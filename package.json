@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/SICelineChan/Chromebk_Project1_Nodejs#readme",
   "dependencies": {
+    "body-parser": "^1.20.1",
     "bootstrap-icons": "^1.10.3",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",

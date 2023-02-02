@@ -1,7 +1,6 @@
 require("dotenv").config();
 const mysql = require("mysql2");
 
-
 const connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
@@ -21,24 +20,9 @@ function getAllUsers(callback){
     });
     
 }
-function insertNewUser(userData, callback) {
-    const queryString = "INSERT INTO users (name, username, password)";
-    const params = [
-        userData.name,
-        userData.username,
-        userData.password,
-    ];
-    console.log(userData);
-    
-    connection.query(queryString, params, function (err, result){
-        console.log(result);
-        console.log(params);
-        callback(result);
-    });
-}
 
 
 module.exports = {
     getAllUsers,
-    insertNewUser,
+    
 };
