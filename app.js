@@ -28,6 +28,9 @@ app.get("/data", function(req,res){
   }
     res.render("databases", templateData);
 })
+app.get("/about", function(req,res){
+  res.render("about");
+})
 
 app.get("/info", function (req, res) {
   const index = req.query.index || 1
