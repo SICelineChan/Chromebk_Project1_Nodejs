@@ -20,13 +20,17 @@ function getCountryById (id, callback) {
 };
 //works when menually input to here to make POST request
 function insertCountry(data, callback) {
-    const queryString = `INSERT INTO country VALUES (NULL, 'US', '2019-10-21','2019-11-12')`;
-    
-connection.query(queryString, function (err, result){
-    callback(result);
-    console.log(queryString)
-    if (err) throw err;
-    console.log(`Show us the ${result[0]}`);
+    const queryString = `INSERT INTO country VALUES (NULL, ?,?,?)`;
+    const params = [
+        data.name,
+        data.dateoftravel,
+        data.datefinish
+    ]
+   
+connection.query(queryString, params, function (err, results){
+    callback(results);
+    console.log(results);
+    console.log(`Show us the ${results} and ${params}`)
     
 });
 };

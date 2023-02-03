@@ -29,12 +29,13 @@ function addCountry(req, res) {
         dateoftravel: req.body.dateoftravel,
         datefinish: req.body.datefinish,
     };
-   console.log(newCountry);
+   
 
-    countryDB.insertCountry(newCountry, function(result){
-        console.log(newCountry);
-        res.send(`You have added ${result}`);
-        
+    countryDB.insertCountry(newCountry, function(results){
+        const id = results.insertId;
+        //console.log(Object.values(results))
+        //res.send(`You have added a new id: ${id}`);
+        res.send(`Give me some results ${id} and ${newCountry[0]}`);
     })
 }
 module.exports= {

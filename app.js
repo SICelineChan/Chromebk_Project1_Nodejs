@@ -9,8 +9,8 @@ const countryController = require("./controller/countryController");
 const travelled = require("./json /travelData.json");
 const bodyParser = require("body-parser");
 
-const jsonParser = bodyParser.json()
-const urlencodedParser = bodyParser.urlencoded({extended:true})
+//const jsonParser = bodyParser.json()
+//const urlencodedParser = bodyParser.urlencoded({extended:true})
 
 app.use(cors());
 const port = process.env.DB_PORT || 3000;
