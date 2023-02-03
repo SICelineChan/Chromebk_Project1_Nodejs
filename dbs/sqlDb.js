@@ -6,11 +6,11 @@ const connection = mysql.createConnection({
     port: 3306,
     user: "root",
     password: "deb_bull$eye2CC",
-    database: "testuser",
+    database: "travel",
 });
 
 function getAllUsers(callback){
-    const queryString = "SELECT * FROM users";
+    const queryString = "SELECT * FROM country";
     connection.query(queryString, function (err, results){
         callback({
             count: results.length,
@@ -20,6 +20,7 @@ function getAllUsers(callback){
     });
     
 }
+
 
 
 module.exports = {

@@ -5,9 +5,12 @@ const cors = require("cors");
 const testMongoDb = require("./testMongoDb");
 const db = require("./dbs/sqlDb");
 const router = require("./routes/router");
-
+const countryController = require("./controller/countryController");
 const travelled = require("./json /travelData.json");
+const bodyParser = require("body-parser");
 
+const jsonParser = bodyParser.json()
+const urlencodedParser = bodyParser.urlencoded({extended:true})
 
 app.use(cors());
 const port = process.env.DB_PORT || 3000;
@@ -49,6 +52,9 @@ app.get("/sql", function (req, res){
   })
 })
 
+app.post("/sql",countryController.addCountry);
+
+app.get("/sql/:id", countryController.countryById);
 
 
 
