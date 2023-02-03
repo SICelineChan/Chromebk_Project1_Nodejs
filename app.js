@@ -46,6 +46,7 @@ app.get("/mongo", async function (req,res) {
     res.json(result);
   })
 })
+
 app.get("/sql", function (req, res){
   db.getAllUsers(function (results){
     res.json(results);
