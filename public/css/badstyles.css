@@ -1,7 +1,12 @@
-body {
-    background-image: url("images/bglagoon.jpg") ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-  
-  }
+.darkBtn {
+  cursor: pointer;
+  border: 1px solid black;
+  text-align: center;
+  padding: 2px;
+
+}
+.dark {
+  background-color: lightslategray;
+  font-size: 20px;
+  color: aliceblue;
+}

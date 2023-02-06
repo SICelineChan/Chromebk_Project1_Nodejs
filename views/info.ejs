@@ -20,6 +20,8 @@
     <h2>Testing page to pull data from local JSON</h2>
     <div class="container">
         <button><a href="/data">Back</a></button>
+        <button class="darkBtn" onclick="dark()">dark mode</button>
+       
         <h2>The city that we travelled to: <%= places.city %> </h2>
         <h3>We were travelling from <%=places.datetravelfrom %> to <%= places.datetravelto %> </h3>
     </div>
@@ -32,5 +34,11 @@
 
     <%- include("partials/footer.ejs") %>
 </div>
+<script>
+ function dark() { 
+       let element = document.body; 
+         element.classList.toggle("dark");
+         }
+</script>
 </body>
 </html>

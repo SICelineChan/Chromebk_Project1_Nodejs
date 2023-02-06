@@ -31,7 +31,7 @@ app.get("/data", function(req,res){
 app.get("/about", function(req,res){
   res.render("about");
 })
-
+//----------info.ejs-------------
 app.get("/info", function (req, res) {
   const index = req.query.index || 1
   console.log(index);
@@ -40,10 +40,10 @@ app.get("/info", function (req, res) {
     places: travelled[index],
     
   };
-//console.log(index);
+
     res.render("info", templateData);
   });
-
+//----------mongoDB----------
 app.get("/mongo", async function (req,res) {
   testMongoDb.findAll(function (result){
     res.json(result);
