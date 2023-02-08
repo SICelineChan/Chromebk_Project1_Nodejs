@@ -7,19 +7,16 @@ const db = require("./dbs/sqlDb");
 const router = require("./routes/router");
 const countryController = require("./controller/countryController");
 const travelled = require("./json /travelData.json");
-const bodyParser = require("body-parser");
 
-//const jsonParser = bodyParser.json()
-//const urlencodedParser = bodyParser.urlencoded({extended:true})
 
 app.use(cors());
 const port = process.env.DB_PORT || 3000;
 
 app.use(express.json());
 app.use(router);
-
 app.use(express.static("public"));
 app.set("view engine", "ejs");
+
 
 app.get("/data", function(req,res){
 
@@ -28,9 +25,7 @@ app.get("/data", function(req,res){
   }
     res.render("databases", templateData);
 })
-app.get("/about", function(req,res){
-  res.render("about");
-})
+
 //----------info.ejs-------------
 app.get("/info", function (req, res) {
   const index = req.query.index || 1
@@ -38,11 +33,11 @@ app.get("/info", function (req, res) {
 
   const templateData = {
     places: travelled[index],
-    
   };
-
     res.render("info", templateData);
   });
+
+
 //----------mongoDB----------
 app.get("/mongo", async function (req,res) {
   testMongoDb.findAll(function (result){
@@ -50,6 +45,7 @@ app.get("/mongo", async function (req,res) {
   })
 })
 
+//-------mySql---------------
 app.get("/sql", function (req, res){
   db.getAllUsers(function (results){
     res.json(results);

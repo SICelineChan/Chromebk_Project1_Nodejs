@@ -29,7 +29,6 @@ function addCountry(req, res) {
         dateoftravel: req.body.dateoftravel,
         datefinish: req.body.datefinish,
     };
-   
 
     countryDB.insertCountry(newCountry, function(results){
         const id = results.insertId;
