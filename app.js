@@ -7,6 +7,8 @@ const db = require("./dbs/sqlDb");
 const router = require("./routes/router");
 const countryController = require("./controller/countryController");
 const travelled = require("./json /travelData.json");
+const fetch = require("node-fetch");
+const { json } = require("express");
 
 
 app.use(cors());
@@ -29,12 +31,35 @@ app.get("/data", function(req,res){
 //----------info.ejs-------------
 app.get("/info", function (req, res) {
   const index = req.query.index || 1
-  console.log(index);
+  //console.log(index);
+  const flag = req.body.flag;
 
   const templateData = {
     places: travelled[index],
   };
-    res.render("info", templateData);
+
+  const url = 'https://restcountries.com/v3.1/name/mexico';
+  const options = {
+    method: 'GET',
+    
+  };
+  
+  fetch(url, options)
+    .then(function (response) { 
+      response 
+      .json()
+      .then(function(result) {
+        let mexFlag = result;
+        console.log(mexFlag[0].flag);
+        
+        
+
+    })
+    
+    });
+  
+  
+  res.render("info", templateData);
   });
 
 
