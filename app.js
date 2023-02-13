@@ -71,7 +71,7 @@ app.get("/mongo", async function (req,res) {
 })
 
 //-------mySql---------------
-app.get("/sql", function (req, res){
+/*app.get("/sql", function (req, res){
   db.getAllUsers(function (results){
     res.json(results);
   })
@@ -79,7 +79,7 @@ app.get("/sql", function (req, res){
 
 app.post("/sql",countryController.addCountry);
 
-app.get("/sql/:id", countryController.countryById);
+app.get("/sql/:id", countryController.countryById);*/
 
 
 
