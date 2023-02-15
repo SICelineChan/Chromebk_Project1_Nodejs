@@ -1,5 +1,6 @@
 # Chromebk_Project1_Nodejs
-This page will also act as my mini diary and progress of this project.
+This is a working project using a chromebook with Linux Debian 11 as the developer system. I have never used Linux and my chunky Windows laptop is currently sitting at home, whilst I'm travelling. Since graduated from Hamburg Coding School in Dec 2022, I want to learn more on Node.js,MySql and MongoDB on my own. I'm trying to recreate my travel blog project for the 3rd time! Which "eventually" will have my working REST API and a "Login" page. 
+----------------
 
 So I have made a little note about what happened since this mini project kicked off around mid-Jan! Now coming to mid-Feb, a little update on how this is going. I'm super chuffed that I managed to see my REST APIs on MongoDB and mySQL. It was pretty soul-sucking just waiting for linux to download and to run dBeaver, after 2 hours, I managed a little mySQL database on my local chromebook. And after another few days of trying, I was able to get and post http request on RESTED to mySQL. Once more after a few more try, I wanna try deployment! I'm sure there is some security issues with mySQL, so I decided to comment my codes related mySQL and solely go for the MongoDB data first. As I said, 30mins or so later...
 We have a life site on Render.com
@@ -14,3 +15,7 @@ This is a project which I am using a chromebook instead of my trusty dell chonky
 
 17th Jan 2023
 ------------------
+
+
+
+
