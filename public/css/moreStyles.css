@@ -1,6 +1,7 @@
 .darkBtn {
   cursor: pointer;
-  border: 1px solid black;
+  background: none;
+  border: none;
   text-align: center;
   padding: 2px;
 
@@ -9,4 +10,12 @@
   background-color: darkslategrey;
   font-size: 20px;
   color: aliceblue;
+}
+.myself {
+  width: 130px;
+  border-radius: 50%;
+}
+.logo{
+  width: 50px;
+  border-radius: 60%
 }
