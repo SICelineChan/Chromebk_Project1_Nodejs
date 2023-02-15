@@ -18,21 +18,19 @@
     <main class="lead py-xxl-5 mb-xl-4 text-center">
     <H1>Info Page</H1>
     <h2>Testing page to pull data from local JSON</h2>
-    <div class="container">
-        
-        <!--<button class="darkBtn" onclick="dark()">dark mode</button>-->
-        
-       
-        <h3>The city that we travelled to: <%= places.city %> </h3>
-        <h3>We were travelling from <%=places.datetravelfrom %> to <%= places.datetravelto %> </h3>
+    
+    <div class="container-lg">
+        <h5>The city that we travelled to: <%= places.city %> </h5>
+        <p>We were travelling from <%=places.datetravelfrom %> to <%= places.datetravelto %> </p>
     </div>
     <div class="container">
         
     <p>The data come from a local JSON file and is being displayed onto this .ejs file. Although there aren't a lot here, I have also included a quick back button and a dark mode button here</p>
-    <button><a href="/data">Back</a></button>
-    </div>
+   
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start"><a class="btn btn-light text-decoration-none" role="button" href="/data">Back</a></button></div>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end"> <button class="darkBtn" onclick="dark()"><i class="bi bi-moon" style="font-size: 1.5rem; color:black;"></i></button></div>
+    </div> 
     
-        <button class="darkBtn" onclick="dark()"><i class="bi bi-moon" style="font-size: 1.5rem; color:black;"></i></button>
 </main>
 
     <%- include("partials/footer.ejs") %>
