@@ -5,56 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/moreStyles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Travelling noodles</title>
 </head>
-<style>
-  body {
-  background-image: url("images/bglagoon.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-}
-</style>
+
+
 <body class="d-flex h-100 text-center">
     
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <div class="container-fluid d-flex w-100 h-100 p-3 mx-auto flex-column">
     
     <header class="mb-auto py-3">
       <div>
         <nav class="nav nav-masthead justify-content-center float-md-start ">
-          <a class="text-light fw-bold mx-md-3 py-3 active text-decoration-none" aria-current="page" href="/about">About Me</a>
-          <a class="text-light fw-bold mx-md-3 py-3 text-decoration-none" href="/data">Databases</a>
-          <a class="text-light fw-bold mx-md-3  py-3 text-decoration-none" href="/mongo">MongoDB</a>
+          <a class="text-dark fw-bold mx-md-3 py-3 active text-decoration-none" aria-current="page" href="/about">About Me</a>
+          <a class="text-dark fw-bold mx-md-3 py-3 text-decoration-none" href="/data">Databases</a>
+          <a class="text-dark fw-bold mx-md-3  py-3 text-decoration-none" href="/mongo">MongoDB</a>
           <!-- <a class="text-light fw-bold mx-md-3  py-3 text-decoration-none" href="/sql">MySql</a> -->
           
         </nav>
-        
-      
       </div>
     </header>
-    
-    <main class="lead py-xxl-5 mb-xl-4 text-center">
-      <h1>Eat Noodles and Go Travel</h1>
-      <p class="lead py-xxl-4 px-xl-4 text-center container-fluid">Another project that is now using node.js and more backend!</p>
-      <p class="lead py-xxl-4 px-xl-2 text-center container-fluid">more to follow!</p>
-      <p class="lead py-lg-3">
-        <a href="/info" class="btn btn-lg btn-secondary fw-bold border-white bg-dark">Let's Roll!</a>
-      </p>
-    </main>
+
+
+  <main>
+
+
+    <div class="d-lg-flex text-center" style="background-image: url(images/mountain.jpg); width: auto; height: 700px">
+      <div class="col-md-5 p-lg-4 mx-auto my-lg-5">
+        <h1 class="display-6 fw-normal">Welcome to my travel blog</h1>
+        <p class="lead fw-normal">another showcase of my coding project!</p>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
   
+    <div class="d-lg-flex my-md-3 ps-md-3">
+      <div class="text-bg-dark me-md-1 pt-3 px-3 pt-md-1 px-md-1">  
+          <img class="p-1" src="images/qlimes01.jpg" width="500px" height="480px">
+      </div>
+      
+      <div class="flex-fill me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center" style="font-family: 'Raleway', sans-serif;">
+        <div class="my-3 p-3">
+          <h2 class="display-5">About Me</h2>
+          <p class="lead">a little about this site and who I am!</p>
+        </div>
+        <a href="/about"> <img src="images/mecc.png" class="myself" alt="myself"></a>
+      </div>
+
+      <div class="me-md-1 pt-3 px-3 pt-md-1 px-md-1">  
+        <img class="p-1" src="images/qlimesLlama.jpg" width="600px" height="480px">
+    </div>
+
+    </div>
+
+    <div class="d-lg-flex my-sm-1 ps-1">
+      <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center" style="background-color: #FDFDBD;">
+        <div class="my-3 py-3">
+          <h3 class="display-4">Say Hola!</h3>
+          <p class="lead">Qulimes!</p>
+          <a href="/about"> <img src="images/paddy.jpg" class="myself" alt="myself"></a>
+        </div>
+      </div>
+      <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden" style="background-color: #C8FFD4;">
+        <div class="my-1 py-3">
+          <img src="images/qlimesWall.jpg" alt="" width="500" height="600">
+        </div>
+      </div>
+      <div class="me-md-3 px-4 pt-6" style="background-color: #B1AFFF;">
+        <img src="images/qlimesCactus.jpg" alt="" width="500" height="700">
+      </div>
+    </div>
+
+  </main>
    
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <p class="col-md-4 mb-0 text-white">© 2023 celine S I chan</p>
+      <p class="col-md-4 mb-0 text-dark">© 2023 celine S I chan</p>
       <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-        <i class="bi bi-house" style="font-size: 1.5rem; color:azure;"></i>
+        <i class="bi bi-house" style="font-size: 1.5rem; color:darkgreen;"></i>
       </a>
       <ul class="nav col-md-4 d-flex align-items-center justify-content-center">
-        <a href="https://github.com/SICelineChan" class="nav-link text-white"><li class="nav-item bi bi-github" style="font-size: 2rem;"></li></a>
-        <a href="mailto:cctinlone@gmail.com" class="nav-link text-white"><li class="nav-item bi-google" style="font-size: 2rem;"></li></a>
-        <a href="https://steamcommunity.com/id/sicCeline/" class="nav-link text-white"><li class="nav-item bi-steam" style="font-size: 2rem;"></li></a>
-        <a href="https://www.linkedin.com/in/celine-chan-179a572b/" class="nav-link text-white"><li class="nav-item bi-linkedin" style="font-size: 2rem;"></li></a>
+        <a href="https://github.com/SICelineChan" class="nav-link text-dark"><li class="nav-item bi bi-github" style="font-size: 2rem;"></li></a>
+        <a href="mailto:cctinlone@gmail.com" class="nav-link text-dark"><li class="nav-item bi-google" style="font-size: 2rem;"></li></a>
+        <a href="https://steamcommunity.com/id/sicCeline/" class="nav-link text-dark"><li class="nav-item bi-steam" style="font-size: 2rem;"></li></a>
+        <a href="https://www.linkedin.com/in/celine-chan-179a572b/" class="nav-link text-dark"><li class="nav-item bi-linkedin" style="font-size: 2rem;"></li></a>
       </ul>
     </footer>
 

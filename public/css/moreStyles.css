@@ -1,3 +1,17 @@
+
+
+
+
+body{
+  background-image: url("images/bglagoon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+main{
+  font-family: 'Courgette', cursive;
+}
+
 .darkBtn {
   cursor: pointer;
   background: none;
