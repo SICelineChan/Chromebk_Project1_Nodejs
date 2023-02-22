@@ -1,6 +1,10 @@
-
-
-
+/*
+font-family: 'Boogaloo', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Marck Script', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+*/
 
 body{
   background-image: url("images/bglagoon.jpg");
@@ -9,7 +13,19 @@ body{
   height: 100%;
 }
 main{
+  font-family: 'Playfair Display', serif;
+  
+}
+.mainTitle{
+  font-size: 90px;
   font-family: 'Courgette', cursive;
+  color: #c763c7;
+}
+.subTitle{
+  font-family: 'Raleway', sans-serif;
+  font-size: 35px;
+  color: #F6E6C2;
+  -webkit-text-stroke: 1px grey;
 }
 
 .darkBtn {
@@ -25,6 +41,7 @@ main{
   font-size: 20px;
   color: aliceblue;
 }
+
 .myself {
   width: 130px;
   border-radius: 50%;
