@@ -10,36 +10,67 @@
     <title>mongo db testing page</title>
     
 </head>
+<style>
+  body {
+  background: linear-gradient(-45deg, #c49e92, #d4789b, #36bff0, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 6s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+</style>
 
 <body class="d-flex h-100 text-center">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <%- include("partials/header.ejs") %>
     
 
-    <main class="lead py-xxl-5 mb-xl-4 text-center">
-    <H2>Testing databases with node js, local JSON, MongoDB and mySQL</H2>
-    <h4>The following items are from my local JSON file.</h4>
-    <h4>My rest API is currently available on this page - <a href="/mongo">MongoDB</a> 
-    </main>
+    <main class="container-fluid lead py-xxl-5 mb-xl-4 text-center">
+        <H2>Testing databases with node js, local JSON, MongoDB and mySQL</H2>
+        <h4>The following items are from my local JSON file.</h4>
+        <h4>My rest API is currently available on this page - <a href="/mongo">MongoDB</a> 
+        
+        <div class="d-flex row mb-2 py-2 mb-3 justify-content-center">
+            <div class="col-md-4">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary">Local JSON</strong>
+                  <h3 class="mb-0">Where have I been?</h3>
+                  <div class="container-sm d-flex justify-content-center">
+                    <ol class="list-group list-group-numbered">
+                    <% for (let i = 0; i < places.length; i++) {  %>
+                        <li class="list-group-item list-group-flush"><a href="./info?index=<%=i%>"><%=places[i].city %></li></a>   
+                    <% } %>
+                </ol>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
     
-    <div class="container-sm d-flex justify-content-center">
-        <ol class="list-group list-group-numbered">
-        <% for (let i = 0; i < places.length; i++) {  %>
-            <li class="list-group-item list-group-flush"><a href="./info?index=<%=i%>"><%=places[i].city %></li></a>   
-        <% } %>
-    </ol>
-    </div>
+    
     
         <!--and  <a href="/sql">MySql</a> are connected to the relative link!</h4>
         <h4>You can now POST using RESTED to the sql and can view /sql/:id</h4>--> 
         
-           
-    
 
 
     <%- include("partials/footer.ejs") %>
 </div>
 </body>
+
 </html>
 
 

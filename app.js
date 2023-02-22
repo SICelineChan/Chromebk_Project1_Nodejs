@@ -32,33 +32,9 @@ app.get("/data", function(req,res){
 app.get("/info", function (req, res) {
   const index = req.query.index || 1
   //console.log(index);
-  const flag = req.body.flag;
-
   const templateData = {
     places: travelled[index],
-  };
-
-  const url = 'https://restcountries.com/v3.1/name/mexico';
-  const options = {
-    method: 'GET',
-    
-  };
-  
-  fetch(url, options)
-    .then(function (response) { 
-      response 
-      .json()
-      .then(function(result) {
-        let mexFlag = result;
-        console.log(mexFlag[0].flag);
-        
-        
-
-    })
-    
-    });
-  
-  
+  };  
   res.render("info", templateData);
   });
 

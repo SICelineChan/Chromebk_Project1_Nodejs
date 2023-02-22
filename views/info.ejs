@@ -9,28 +9,60 @@
     <link rel="stylesheet" href="css/moreStyles.css">
     <title>info testing page</title>
 </head>
+<style>
+    body {
+    background: linear-gradient(-45deg, #c49e92, #d4789b, #36bff0, #23d5ab);
+    background-size: 400% 400%;
+    animation: smooth 6s ease infinite;
+    height: 100vh;
+  }
+  @keyframes smooth {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  </style>
 
 <body id="info" class="d-flex h-100 text-center">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <%- include("partials/header.ejs") %>
-    
+   
 
     <main class="lead py-xxl-5 mb-xl-4 text-center">
     <H1>Info Page</H1>
     <h2>Testing page to pull data from local JSON</h2>
-    
-    <div class="container-lg">
-        <h5>The city that we travelled to: <%= places.city %> </h5>
-        <p>We were travelling from <%=places.datetravelfrom %> to <%= places.datetravelto %> </p>
-    </div>
-    <div class="container">
-        
-    <p>The data come from a local JSON file and is being displayed onto this .ejs file. Although there aren't a lot here, I have also included a quick back button and a dark mode button below.</p>
    
-    <div class="d-grid gap-2 d-md-flex justify-content-md-start"><a class="btn btn-light text-decoration-none" role="button" href="/data">Back</a></button></div>
-    <div class="d-grid gap-2 d-md-flex justify-content-md-end"> <button class="darkBtn" onclick="dark()"><i class="bi bi-moon" style="font-size: 1.5rem; color:black;"></i></button></div>
-    </div> 
+   
+    <div class="d-flex row mb-2 py-2 mb-3 justify-content-md-evenly">
+    <div class="col-md-5">
+      <div class="row g-0 border rounded flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <div class="d-inline-block mb-2 text-primary"><div class="d-grid gap-2 d-md-flex justify-content-evenly"><a class="btn btn-outline-light text-decoration-none" role="button" href="/data">Back</a></button></div>
+            
+          </div>
+          <h3 class="mb-md-2"><%= places.city %></h3>
+          <div class="mb-md-4 text-muted text-center">We were travelling from <%=places.datetravelfrom %> to <%= places.datetravelto %> </div>
+          
+        </div>
+        <div class="col-md-6">
+          <img src="<%=places.image %>" class="bd-placeholder-img rounded" width="305" height="230">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-lg">
+    <p>A dark mode button below!</p>
     
+    <div class="d-grid gap-2 d-md-flex justify-content-evenly"> <button class="darkBtn" onclick="dark()"><i class="bi bi-moon" style="font-size: 1.5rem; color:black;"></i></button></div>
+</div>
 </main>
 
     <%- include("partials/footer.ejs") %>

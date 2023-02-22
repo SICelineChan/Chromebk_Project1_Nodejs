@@ -41,7 +41,26 @@ main{
   font-size: 20px;
   color: aliceblue;
 }
-
+.Me:hover{
+    font-family: 'Raleway', sans-serif;
+    background-size: 100% 100%;
+    background: linear-gradient(-35deg, #ee85ad, #55c8f2, #51e8c5);
+    animation: move 6s ease infinite;
+    height: 100%;
+    transition: 6s ;
+}
+@keyframes move {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  
+}
 .myself {
   width: 130px;
   border-radius: 50%;
