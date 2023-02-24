@@ -5,25 +5,42 @@ font-family: 'Marck Script', cursive;
 font-family: 'Playfair Display', serif;
 font-family: 'Raleway', sans-serif;
 */
-
-body{
-  background-image: url("images/bglagoon.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
+h3 {
+  font-family: 'Courgette', cursive;
 }
-main{
-  font-family: 'Playfair Display', serif;
-  
+
+.navbar {
+  padding: 0 0 0.5rem;
+  color:black;
+}
+
+.navbar-brand {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 2px;
+  color: lightslategrey;
+  font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
+}
+.navbar-toggler-icon {
+  color: lightgoldenrodyellow;
+}
+
+.container-fluid {
+  padding: 2% 5% 1%;
 }
 .mainTitle{
-  font-size: 90px;
+  font-size: 6rem;
   font-family: 'Courgette', cursive;
-  color: #c763c7;
+  color: #ecad1a;
 }
 .subTitle{
   font-family: 'Raleway', sans-serif;
-  font-size: 35px;
+  font-size: 2.2rem;
   color: #F6E6C2;
   -webkit-text-stroke: 1px grey;
 }
@@ -68,4 +85,18 @@ main{
 .logo{
   width: 50px;
   border-radius: 60%
+}
+
+@media (max-width: 1028px) { 
+.container-fluid{
+padding: 2% 5%;
+margin: 2%;
+}
+.mainTitle {
+  font-size: 1.5rem;
+}
+.subTitle{
+  font-size: 0.7rem;
+}
+  
 }
