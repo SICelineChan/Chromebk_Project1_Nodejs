@@ -98,5 +98,9 @@ margin: 2%;
 .subTitle{
   font-size: 0.7rem;
 }
-  
+nav a{
+padding: 2% 5%;
+margin: 2%;
+}
+
 }
