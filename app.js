@@ -3,8 +3,11 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const testMongoDb = require("./testMongoDb");
-//const db = require("./dbs/sqlDb");
+//----Router----
 const router = require("./routes/router");
+const articleRouter = require("./routes/articles")
+
+//const db = require("./dbs/sqlDb");
 //const countryController = require("./controller/countryController");
 const travelled = require("./json /travelData.json");
 const fetch = require("node-fetch");
@@ -14,8 +17,10 @@ const { json } = require("express");
 app.use(cors());
 const port = process.env.DB_PORT || 3000;
 
-app.use(express.json());
 app.use(router);
+app.use("/articles", articleRouter)
+
+app.use(express.json());
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
