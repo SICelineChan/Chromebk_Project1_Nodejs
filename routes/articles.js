@@ -1,6 +1,9 @@
 const express = require("express")
 const router = express.Router()
+const Blog = require('./../db/blog')
+const mongoose = require('mongoose')
 
+mongoose.connect('mongodb://localhost/qulimesBlog', {useNewUrlParser: true, useUnifiedTopology: true})
 
 router.get("/",(req,res)=> {
     const articles = [{
@@ -17,10 +20,33 @@ router.get("/",(req,res)=> {
     res.render("articles/blogIndex", {articles: articles})
 })
 
-
-router.get("/new", (req, res) => {
-    res.render("articles/newblog")
+router.get("/newblog", (req, res) => {
+    res.render("articles/newblog", {blog: new Blog()})
 })
+
+
+
+router.get("/:id", (req, res)=> {
+res.send(req.params.id)
+
+})
+
+router.post('/',async(req, res) => {
+    let blog = new Blog({
+        title: req.body.title,
+        shortDescription: req.body.shortDescription,
+        content: req.body.content,
+    })
+    try {
+        await blog.save()
+        res.redirect(`/articles/${blog.id}`)
+    } catch (error) {
+        res.render('articles/newblog', {blog: blog})
+        console.log("Something was wrong!")
+    }
+    await blog.save()
+})
+
 
 
 
