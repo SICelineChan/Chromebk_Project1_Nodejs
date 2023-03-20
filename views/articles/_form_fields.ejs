@@ -2,7 +2,7 @@
   <label for="title">Title</label>
   <input
     required
-    value="<%= blog.title%>"
+    value="<%= blog.title %>"
     type="text"
     name="title"
     id="title"
@@ -12,15 +12,15 @@
 <div class="form-group">
   <label for="description">Short description</label>
   <textarea name="description" id="description" class="form-control">
-<%=blog.shortDescription%></textarea
+<%=blog.shortDescription %></textarea
   >
 </div>
 <div class="form-group">
   <label for="content">Content</label>
   <textarea required name="content" id="content" class="form-control">
-<%= blog.content%></textarea
+<%= blog.content %></textarea
   >
 </div>
 
 <a href="/articles" class="mt-3 btn btn-secondary">Cancel</a>
-<button type="submit" class="mt-3 btn btn-outline-dark">submit</button>
+<button type="submit" class="mt-3 btn btn-outline-info">Save</button>

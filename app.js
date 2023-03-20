@@ -3,6 +3,8 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const testMongoDb = require("./testMongoDb");
+
+
 //----Router----
 const router = require("./routes/router");
 const articleRouter = require("./routes/articles")
@@ -12,19 +14,15 @@ const travelled = require("./json /travelData.json");
 const fetch = require("node-fetch");
 const { json } = require("express");
 
-
 app.use(cors());
-const port = process.env.DB_PORT || 3000;
+const port = 3000;
 
 app.use(router);
-
-
-
-
 app.use(express.json());
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.use(express.urlencoded({extended: false}))
+app.use("/articles", articleRouter)
 
 app.get("/data", function(req,res){
 
@@ -63,7 +61,7 @@ app.post("/sql",countryController.addCountry);
 
 app.get("/sql/:id", countryController.countryById);*/
 
-app.use("/articles", articleRouter)
+
 
 app.listen(port, function (){
     console.log(`now listening on port ${port}`);

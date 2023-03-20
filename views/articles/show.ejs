@@ -24,38 +24,13 @@
 
       <main class="lead py-xxl-5 mb-xl-4">
         <div class="container">
-          <h1 class="mb-6 text-center">Home for my Blogs</h1>
-          <div class="d-flex justify-content-between">
-            <a href="/articles/newblog" class="mb-2 btn btn-outline-success"
-              >New Blog</a
-            >
+          <h2 class="mb-4">Show all Blogs</h2>
+          <h2 class="mb-4"><%= blog.title %></h2>
+          <div class="text-muted mb-3"><%= blog.createdOn %></div>
+          <a href="/articles" class="btn btn-outline-info">All Blogs</a>
+          <a href="/articles/edit" class="btn btn-outline-warning">Edit</a>
 
-            <div class="gap-2 justify-content-end">
-              <button class="darkBtn" onclick="dark()">
-                <i
-                  class="bi bi-moon"
-                  style="font-size: 1.5rem; color: black"
-                ></i>
-              </button>
-            </div>
-          </div>
-
-          <% articles.forEach(article => { %>
-          <div class="card mt-4">
-            <div class="card-body">
-              <h3 class="card-title"><%= article.title %></h3>
-              <h4 class="card-subtitle mb-3 text-muted">
-                <%= article.createdOn.toLocaleString() %>
-              </h4>
-              <p class="card-text mb-2"><%=article.description %></p>
-              <a
-                href="articles/<%= article.id %>"
-                class="btn btn-outline-primary"
-                >Read More!</a
-              >
-            </div>
-          </div>
-          <% }) %>
+          <div class="mt-3 mb-4"><%= blog.content %></div>
         </div>
       </main>
       <%- include('../partials/footer') %>
