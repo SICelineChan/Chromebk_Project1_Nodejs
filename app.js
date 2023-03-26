@@ -8,11 +8,13 @@ const testMongoDb = require("./testMongoDb");
 //----Router----
 const router = require("./routes/router");
 const articleRouter = require("./routes/articles")
+
 //const db = require("./dbs/sqlDb");
 //const countryController = require("./controller/countryController");
 const travelled = require("./json /travelData.json");
 const fetch = require("node-fetch");
 const { json } = require("express");
+
 
 app.use(cors());
 const port = 3000;
@@ -22,7 +24,9 @@ app.use(express.json());
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.use(express.urlencoded({extended: false}))
+
 app.use("/articles", articleRouter)
+
 
 app.get("/data", function(req,res){
 

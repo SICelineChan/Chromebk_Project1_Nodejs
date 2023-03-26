@@ -40,19 +40,27 @@
             </div>
           </div>
 
-          <% articles.forEach(article => { %>
+          <% articles.forEach(blog => { %>
           <div class="card mt-4">
             <div class="card-body">
-              <h3 class="card-title"><%= article.title %></h3>
+              <h3 class="card-title"><%= blog.title %></h3>
               <h4 class="card-subtitle mb-3 text-muted">
-                <%= article.createdOn.toLocaleString() %>
+                <%= blog.createdOn.toLocaleString() %>
               </h4>
-              <p class="card-text mb-2"><%=article.description %></p>
+              <h4 class="card-text mb-2"><%= blog.description %></h4>
+
               <a
-                href="articles/<%= article.id %>"
+                href="articles/<%= blog.slug %>"
                 class="btn btn-outline-primary"
                 >Read More!</a
               >
+              <form
+                action="articles/<%= blog.id %>?_method=DELETE"
+                method="POST"
+                class="d-inline"
+              >
+                <button type="submit" class="btn btn-danger">Delete</button>
+              </form>
             </div>
           </div>
           <% }) %>
