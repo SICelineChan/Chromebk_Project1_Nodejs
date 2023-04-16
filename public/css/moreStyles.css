@@ -38,6 +38,12 @@ h3 {
   color: #F6E6C2;
   -webkit-text-stroke: 1px grey;
 }
+.box1 {
+  background-color: #8ea7e9;
+}
+.box2 {
+  background-color: #d9cbf1;
+}
 
 .darkBtn {
   font-size: 1.2 rem;
@@ -60,8 +66,11 @@ h3 {
 .dark button {
   color: #ecad1a;
 }
-.dark p {
-  color: #55c8f2;
+.dark h2, .dark p {
+  color: #42bbe8;
+}
+.dark .box1, .dark .box2 {
+  background-color: #252525;
 }
 .Me:hover{
     font-family: 'Raleway', sans-serif;

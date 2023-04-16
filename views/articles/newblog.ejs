@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="css/moreStyles.css" />
+    <link rel="stylesheet" href="./../../css/moreStyles.css" />
     <title>Blog Index Page</title>
   </head>
 
@@ -24,7 +24,14 @@
 
       <main class="lead py-xxl-5 mb-xl-4">
         <div class="container">
-          <h2 class="mb-4">New Entry for Blog</h2>
+          <div class="d-flex justify-content-between">
+            <h2 class="mb-4">New Entry for Blog</h2>
+            <div class="gap-2 justify-content-end">
+              <button class="darkBtn" onclick="dark()">
+                <i class="bi bi-moon" style="font-size: 1.5rem"></i>
+              </button>
+            </div>
+          </div>
 
           <form action="/articles" method="POST">
             <%- include('_form_fields') %>
