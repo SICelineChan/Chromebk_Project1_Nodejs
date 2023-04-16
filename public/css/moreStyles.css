@@ -14,19 +14,17 @@ a:hover {
 
 .navbar {
   padding: 0 0 0.5rem;
-  color:black;
 }
 
-.navbar-brand {
+.navbar-brand .house {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 2.2rem;
 }
 
 .nav-item {
   padding: 0 2px;
   color: lightslategrey;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: 'Raleway', sans-serif;
 }
 .navbar-toggler-icon {
@@ -55,7 +53,7 @@ a:hover {
 }
 
 .darkBtn {
-  font-size: 1.2 rem;
+  font-size: 1.5rem;
   cursor: pointer;
   background: none;
   border: none;
@@ -64,12 +62,12 @@ a:hover {
 
 }
 .dark {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   background-color: rgb(45, 46, 46);
   color: rgb(229, 231, 233);
 }
 .dark .navbar-brand  {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: beige;
 }
 .dark button {
