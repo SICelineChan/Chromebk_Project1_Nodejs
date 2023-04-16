@@ -12,7 +12,7 @@
 </head>
 <style>
   body {
-  background: linear-gradient(-45deg, #c49e92, #d4789b, #36bff0, #23d5ab);
+  background: linear-gradient(-45deg, #e9df93, #e5a448, #36bff0, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 6s ease infinite;
   height: 100vh;
@@ -37,20 +37,21 @@
     
 
     <main class="container-fluid lead py-xxl-5 mb-xl-4 text-center">
-        <H2>Testing databases with node js, local JSON, MongoDB and mySQL</H2>
-        <h4>The following items are from my local JSON file.</h4>
-        <h4>My rest API is currently available on this page - <a href="/mongo">MongoDB</a> 
+        <h2>Data from a local JSON file</h2>
+        <h5>My rest API is currently available on - <a href="/mongo">MongoDB</a></h5> 
+        <p>This page has a bit of a funky color, but this will be the feeling of travelling to all these places.</p>
+        
         
         <div class="d-flex row mb-2 py-2 mb-3 justify-content-center">
             <div class="col-md-4">
               <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-2 text-primary">Local JSON</strong>
-                  <h3 class="mb-0">Where have I been?</h3>
+                  <h4 class="d-inline-block mb-2">Local JSON</h4>
+                  <h4 class="mb-0">Where have I been?</h4>
                   <div class="container-sm d-flex justify-content-center">
                     <ol class="list-group list-group-numbered">
                     <% for (let i = 0; i < places.length; i++) {  %>
-                        <li class="list-group-item list-group-flush"><a href="./info?index=<%=i%>"><%=places[i].city %></li></a>   
+                        <li class="list-group-item list-group-item-action list-group-item-dark"><a href="./info?index=<%=i%>"><%=places[i].city %></li></a>   
                     <% } %>
                 </ol>
                 </div>

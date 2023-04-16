@@ -2,6 +2,15 @@ h3 {
   font-family: 'Marck Script', cursive;
   color:#2183a7;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+    color:#dd6281; 
+    text-decoration:none; 
+    cursor:pointer; 
+}
 
 .navbar {
   padding: 0 0 0.5rem;
