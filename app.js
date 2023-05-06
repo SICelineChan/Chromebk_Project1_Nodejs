@@ -17,7 +17,7 @@ const { json } = require("express");
 
 
 app.use(cors());
-const port = 3000;
+const port = 3001;
 
 app.use(router);
 app.use(express.json());
