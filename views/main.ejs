@@ -22,34 +22,32 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    
+  
 <title>Showcase of Qulimes Argentina</title>
 </head>
 
-
 <body>
     
-  <div class="d-flex w-100 h-100 p-2 mx-auto flex-column">
-    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+ <!--<div class="d-flex w-100 h-100 p-2 mx-auto flex-column">-->
+    <nav id="nav" class="navbar fixed-top navbar-expand-xl">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="/"><i class="bi bi-house house"></i></a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav me-0 mb-1 mb-lg-0">
+        <div class="collapse navbar-collapse rid gap-0 column-gap-3 justify-content-lg-center" id="navbarTogglerDemo03">
+          <ul class="navbar-nav">
             <li class="nav-item"> 
-              <a class="nav-link" style="color: #8bc9ed" href="/about">About</a>
+              <a class="nav-link" style="color: #2f99d7" href="/about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" style="color: #dd6281" href="/data">Database</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color: #8fc77e"  href="/Mongo">MongoDB</a>
+              <a class="nav-link" style="color: #93d57e" href="/Mongo">MongoDB</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color: #9561cc"  href="/articles">Blog</a>
+              <a class="nav-link" style="color: #e3b829"  href="/articles">Blog</a>
             </li>
           </ul>
       </div>
@@ -58,7 +56,7 @@
 
   <main>
     <div class="header-image">
-        <h1 class="mainTitle">Qulimes!</h1>
+        <h1 class="mainTitle">Quilmes!</h1>
     </div>
  
     <div class="container-fluid d-lg-flex my-md-4 px-md-0">
@@ -66,7 +64,7 @@
           <img class="p-1" src="images/qlimes01.jpg" width="100%" height="100%">
       </div>
       
-      <div class="Me flex-fill me-md-1 pt-md-1 px-md-3 text-center">
+      <div class="flex-fill me-md-1 pt-md-1 px-md-3 text-center">
         <div class="my-3 py-3">
           <h2 class="display-5">About Me</h2>
           <p class="lead">a little about this site and who I am!</p>
@@ -76,11 +74,9 @@
       <div class="me-md-1 pt-3 px-0 pt-md-1 px-md-3" style="background-color: #FDFDBD;">  
         <img class="p-1" src="images/qlimesView.jpg" width="100%" height="100%">
     </div>
-        
     </div>
-   
   
-    <div class="container-fluid d-flex my-md-4 px-0">
+    <div class="container-fluid d-lg-flex my-md-4 px-md-0">
       <div class="me-md-2 pt-3 px-3 pt-md-4 px-md-4 text-center" style="background-color: #FDFDBD;">
         <div class="my-3 py-3">
           <h3 class="display-4">Say Hola!</h3>
@@ -96,7 +92,7 @@
         <img src="images/qlimesCactus.jpg" width="95%" height="100%">
       </div>
     </div>
-
+  
   </main>
    
     <footer class="container-fluid d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -112,12 +108,27 @@
       </ul>
     </footer>
 
-  </div>
+  <!--</div>-->
  
-  <script>function dark() {
+  <script>
+  function dark() {
     let element = document.body;
     element.classList.toggle("dark");
-  }</script>
+  }
+  
+  $(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > 200) { 
+              $('.navbar').addClass('solid');
+          } else {
+              $('.navbar').removeClass('solid');
+          }
+        });
+});
+
+  </script>
   </body>   
 </html>
 

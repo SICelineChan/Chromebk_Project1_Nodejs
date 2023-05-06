@@ -1,26 +1,30 @@
 <header class="mb-auto py-1">
   <div>
-    <nav class="nav navbar-expand-lg justify-content-center">
-      <a class="navbar-brand fw-bold mx-2 py-2 text-decoration-none" href="/"
-        ><i class="bi bi-house" style="font-size: 1.8rem"></i
-      ></a>
-      <a class="nav-item fw-bold mx-2 py-3 text-decoration-none" href="/about"
-        >About</a
-      >
-      <a class="nav-item fw-bold mx-2 py-3 text-decoration-none" href="/data"
-        >Databases</a
-      >
-      <a
-        class="nav-item fw-bold mx-2 py-3 text-decoration-none"
-        href="/articles"
-        >Blog</a
-      >
-      <a class="nav-item fw-bold mx-2 py-3 text-decoration-none" href="/mongo"
-        >MongoDB</a
-      >
-
-      <!--<a class="text-dark fw-bold mx-md-3  py-3 text-decoration-none" href="/sql">MySql</a>
-         <a class="text-dark fw-bold mx-md-3 py-3 active text-decoration-none" aria-current="page" href="/about">About Me</a>-->
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/"><i class="bi bi-house house"></i></a>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-0 mb-1 mb-lg-0">
+            <li class="nav-item"> 
+              <a class="nav-link" style="color: #2f99d7" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #dd6281" href="/data">Database</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #417631" href="/Mongo">MongoDB</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #e3b829" href="/articles">Blog</a>
+            </li>
+          </ul>
+      </div>
+      <button class="darkBtn text-end" onclick="dark()"><i class="bi bi-moon moon"></i></button>
     </nav>
   </div>
 </header>
+<!--<a class="text-dark fw-bold mx-md-3  py-3 text-decoration-none" href="/sql">MySql</a>
+         <a class="text-dark fw-bold mx-md-3 py-3 active text-decoration-none" aria-current="page" href="/about">About Me</a>-->
