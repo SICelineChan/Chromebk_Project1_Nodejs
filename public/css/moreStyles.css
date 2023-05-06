@@ -1,5 +1,8 @@
+body{
+  font-family: 'Trocchi', serif;
+}
 h3 {
-  font-family: 'Marck Script', cursive;
+  font-family: 'Cormorant', serif;
   color:#2183a7;
 }
 a {
@@ -11,40 +14,42 @@ a:hover {
     text-decoration:none; 
     cursor:pointer; 
 }
-
 .navbar {
   padding: 0 0 0.5rem;
 }
-
 .navbar-brand .house {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Cormorant', serif;
   font-size: 2.2rem;
 }
-
 .nav-item {
   padding: 0 2px;
   color: lightslategrey;
   font-size: 1.6rem;
-  font-family: 'Raleway', sans-serif;
 }
 .navbar-toggler-icon {
   color: lightgoldenrodyellow;
 }
-
-.container-fluid {
-  padding: 2% 5% 1%;
+.container-fluid{
+  margin-bottom: 0% 1%;
+}
+.header-image {
+  background-image: url(/images/mountain.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+  height: 80vh;
 }
 .mainTitle{
-  font-size: 6rem;
-  font-family: 'Courgette', cursive;
-  color: #ecad1a;
-}
-.subTitle{
-  font-family: 'Raleway', sans-serif;
-  font-size: 2.2rem;
-  color: #F6E6C2;
+  position: relative;
+  text-align: center;
+  padding-top: 7%;
+  mix-blend-mode: color-dodge;
+  font-size: 10rem;
+  font-family: 'Allura', cursive;
+  color: #e6de3d;
   -webkit-text-stroke: 1px grey;
 }
+
 .box1 {
   background-color: #8ea7e9;
 }
@@ -53,7 +58,7 @@ a:hover {
 }
 
 .darkBtn {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   cursor: pointer;
   background: none;
   border: none;
@@ -80,12 +85,12 @@ a:hover {
   background-color: #252525;
 }
 .Me:hover{
-    font-family: 'Raleway', sans-serif;
-    background-size: 100% 100%;
+    font-family: 'Puritan', sans-serif;
+    background-size: 100%;
     background: linear-gradient(-35deg, #ee85ad, #55c8f2, #51e8c5);
-    animation: move 6s ease infinite;
+    animation: move 7s ease-in-out infinite;
     height: 100%;
-    transition: 6s ;
+    transition: 8s ;
 }
 @keyframes move {
     0% {
@@ -108,13 +113,20 @@ a:hover {
   border-radius: 60%
 }
 
-@media (max-width: 1028px) { 
+@media (max-width: 1200px) { 
+.header-image{
+  width: auto;
+  height: 8rem;
+}
 .container-fluid{
 padding: 2% 5%;
 margin: 2%;
 }
 .mainTitle {
-  font-size: 1.5rem;
+  position: relative;
+  text-align: center;
+  mix-blend-mode: color-dodge;
+  font-size: 3rem
 }
 .subTitle{
   font-size: 0.7rem;
@@ -125,3 +137,7 @@ margin: 2%;
 }
 
 }
+
+
+
+
