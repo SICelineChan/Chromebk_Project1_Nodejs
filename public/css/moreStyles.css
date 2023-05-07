@@ -2,6 +2,10 @@ body{
   height: 100%;
   font-family: 'Trocchi', serif;
 }
+.container-fluid{
+  margin: 0% 3%;
+}
+
 h3 {
   font-family: 'Cormorant', serif;
   color:#2183a7;
@@ -15,15 +19,14 @@ a, li {
   color: #51e8b6;
 }
 .nav-item {
-  margin: 2% 4% 0% 4%;
+  margin: 2% 1% 3% 4%;
 }
 .nav a {
   padding: 6%;
 }
 .navbar a{
   font-family: 'Cormorant', serif;
-  padding: 0 0 0 0.6rem;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 700;
   height: 50px;
   background-color: transparent;
@@ -40,11 +43,7 @@ backdrop-filter: blur(2.4px);
 -webkit-backdrop-filter: blur(2.4px);
 transition: background-color 1s ease 0s;
   
-    .navbar-brand {
-      font-size: 2.5rem;
-      color: #3c0147;
-      transition: color 1s ease 0s;
-    }
+    
     .navbar-nav {
 
        > li {
@@ -57,10 +56,6 @@ transition: background-color 1s ease 0s;
     } 
 }
 
-
-.container-fluid{
-  margin-bottom: 0% 1%;
-}
 .header-image {
   height: 80vh;
   width: 100%;
@@ -95,7 +90,7 @@ transition: background-color 1s ease 0s;
   background: none;
   border: none;
   text-align: center;
-  padding: 2px;
+  padding: 1px;
 
 }
 .dark {
@@ -120,39 +115,63 @@ transition: background-color 1s ease 0s;
   width: 130px;
   border-radius: 50%;
 }
-.logo{
-  width: 50px;
-  border-radius: 60%
-}
+
 
 @media (max-width: 1100px) { 
 .header-image{
   width: auto;
-  height: 8rem;
+  height: 12rem;
 }
 .container-fluid{
 padding: 2% 5%;
 margin: 2%;
 }
+
 .mainTitle {
   position: relative;
   text-align: center;
   mix-blend-mode: color-dodge;
-  font-size: 3rem
+  font-size: 4rem
 }
-.subTitle{
-  font-size: 0.7rem;
-}
-nav a{
-font-size: 0.5rem;
-padding: 2% 3%;
-margin: 2%;
-}
-
 
 }
 
-
-
+menu {
+  font-family: 'Cormorant', serif;
+  font-size: 1.5rem;
+  padding: 20px;
+  text-decoration: none;
+  
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  display: inline-block;
+  text-decoration: none;
+}
+menu ul li:hover {
+  font-size: 2.2rem;
+  transition: color 1s ease-in-out 0s;
+  border-bottom: #51e8b6 solid 2px;
+  
+}
+ul li:hover ul {
+  display: block;
+}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li ul li {
+  background: green;
+  display: block;
+}
 
 

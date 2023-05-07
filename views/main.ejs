@@ -1,132 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/moreStyles.css">
-    
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant:ital,wght@1,700&family=Puritan:ital@0;1&family=Trocchi&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/moreStyles.css" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant:ital,wght@1,700&family=Puritan:ital@0;1&family=Trocchi&display=swap"
+      rel="stylesheet"
+    />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  
-<title>A Blog from Quilmes, Argentina</title>
-</head>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
-<body>
-    
- <!--<div class="d-flex w-100 h-100 p-2 mx-auto flex-column">-->
-    <nav id="nav" class="navbar fixed-top navbar-expand-xl">
+    <title>A Blog from Quilmes, Argentina</title>
+  </head>
+
+  <body>
+    <nav id="nav" class="navbar fixed-top navbar-expand-sm">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="/"><i class="bi bi-house house"></i></a>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo03">
+        
+        <div class="collapse navbar-collapse justify-content-sm-center" id="navbarTogglerDemo03">
           <ul class="navbar-nav">
             <li class="nav-item"> 
-              <a class="nav-link" style="color: #2f99d7;" href="/about">About</a>
+              <a class="nav-link" style="color: #95e4ef;" href="/about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color: #dd6281;" href="/data">Database</a>
+              <a class="nav-link" style="color: #f0ed7f;"  href="/articles">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color: #93d57e;" href="/Mongo">MongoDB</a>
+              <a class="nav-link" style="color: #dc6985;" href="/data">Database</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color: #e3b829;"  href="/articles">Blog</a>
+              <a class="nav-link" style="color: #93ef77;" href="/Mongo">MongoDB</a>
             </li>
           </ul>
+          
       </div>
       <button class="darkBtn text-end" onclick="dark()"><i class="bi bi-moon moon"></i></button>
     </nav>
+    
 
-  <main>
-    <div class="header-image">
+    <main>
+      <div class="header-image">
         <h1 class="mainTitle">Quilmes!</h1>
-    </div>
- 
-    <div class="container-fluid d-lg-flex my-md-4 px-md-0">
-      <div class="me-md-1 pt-3 px-0 pt-md-1 px-md-3" style="background-color: #B1AFFF;">  
-          <img class="p-1" src="images/qlimes01.jpg" width="100%" height="100%">
       </div>
-      
-      <div class="flex-fill me-md-1 pt-md-1 px-md-3 text-center">
-        <div class="my-3 py-3">
-          <h2 class="display-5">About Me</h2>
-          <p class="lead">a little about who I am!</p>
-          <a href="/about"> <img src="images/mecc.png" class="myself" alt="myself"></a>
-        </div>
-      </div>
-      <div class="me-md-1 pt-3 px-0 pt-md-1 px-md-3" style="background-color: #FDFDBD;">  
-        <img class="p-1" src="images/qlimesView.jpg" width="100%" height="100%">
-    </div>
-    </div>
-  
-    <div class="container-fluid d-lg-flex my-md-4 px-md-0">
-      <div class="me-md-2 pt-3 px-3 pt-md-4 px-md-4 text-center" style="background-color: #FDFDBD;">
-        <div class="my-3 py-3">
-          <h3 class="display-4">Say Hola!</h3>
-          <a href="/about"> <img src="images/paddy.jpg" class="myself" alt="myself"></a>
-        </div>
-      </div>
-      <div class="me-md-2 pt-3 px-6 pt-md-4 px-md-6" style="background-color: #C8FFD4;">
-        <div class="my-3 py-3">
-          <img src="images/qlimesWall.jpg"  width="100%" height="100%">
-        </div>
-      </div>
-      <div class="me-md-2 px-6 pt-5 pt-md-0 px-md-3" style="background-color: #B1AFFF;">
-        <img src="images/qlimesCactus.jpg" width="95%" height="100%">
-      </div>
-    </div>
-  
-  </main>
-   
-    <footer class="container-fluid d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <p class="col-md-4 mb-0 foot">© 2023 celine S I chan</p>
-      <ul class="nav col-md-4 d-flex align-items-center justify-content-center">
-        <a href="https://github.com/SICelineChan"><li class="nav-item bi bi-github" style="font-size: 2rem;"></li></a>
-        <a href="mailto:cctinlone@gmail.com" c><li class="nav-item bi-google" style="font-size: 2rem;"></li></a>
-        <a href="https://steamcommunity.com/id/sicCeline/" ><li class="nav-item bi-steam" style="font-size: 2rem;"></li></a>
-        <a href="https://www.linkedin.com/in/celine-chan-179a572b/" ><li class="nav-item bi-linkedin" style="font-size: 2rem;"></li></a>
-      </ul>
-    </footer>
 
-  <!--</div>-->
- 
-  <script>
-  function dark() {
-    let element = document.body;
-    element.classList.toggle("dark");
-  }
-  
-  $(document).ready(function() {
-        // Transition effect for navbar 
-        $(window).scroll(function() {
+      <div class="container-fluid d-lg-flex my-md-4 px-md-0">
+        <div
+          class="me-md-1 pt-3 px-0 pt-md-1 px-md-3"
+          style="background-color: #b1afff"
+        >
+          <img
+            class="p-1"
+            src="images/qlimes01.jpg"
+            width="100%"
+            height="100%"
+          />
+        </div>
+
+        <div class="flex-fill me-md-1 pt-md-1 px-md-3 text-center">
+          <div class="my-3 py-3">
+            <h2 class="display-5">About Me</h2>
+            <p class="lead">a little about who I am!</p>
+            <a href="/about">
+              <img src="images/mecc.png" class="myself" alt="myself"
+            /></a>
+          </div>
+        </div>
+        <div
+          class="me-md-1 pt-3 px-0 pt-md-1 px-md-3"
+          style="background-color: #fdfdbd"
+        >
+          <img
+            class="p-1"
+            src="images/qlimesView.jpg"
+            width="100%"
+            height="100%"
+          />
+        </div>
+      </div>
+
+      <div class="container-fluid d-lg-flex my-md-4 px-md-0">
+        <div
+          class="me-md-2 pt-3 px-3 pt-md-4 px-md-4 text-center"
+          style="background-color: #fdfdbd"
+        >
+          <div class="my-3 py-3">
+            <h3 class="display-4">Say Hola!</h3>
+            <a href="/about">
+              <img src="images/paddy.jpg" class="myself" alt="myself"
+            /></a>
+          </div>
+        </div>
+        <div
+          class="me-md-2 pt-3 px-6 pt-md-4 px-md-6"
+          style="background-color: #c8ffd4"
+        >
+          <div class="my-3 py-3">
+            <img src="images/qlimesWall.jpg" width="100%" height="100%" />
+          </div>
+        </div>
+        <div
+          class="me-md-2 px-6 pt-5 pt-md-0 px-md-3"
+          style="background-color: #b1afff"
+        >
+          <img src="images/qlimesCactus.jpg" width="95%" height="100%" />
+        </div>
+      </div>
+    </main>
+
+    <footer
+  class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+>
+  <p class="col-md-4 m-2">© 2023 celine S I chan</p>
+
+
+  <ul class="nav col-md-4 d-flex align-items-center justify-content-center">
+    <a href="https://github.com/SICelineChan" class="nav-link text-dark"
+      ><li class="nav-item bi bi-github" style="font-size: 2rem"></li
+    ></a>
+    <a href="mailto:cctinlone@gmail.com" class="nav-link text-dark"
+      ><li class="nav-item bi-google" style="font-size: 2rem"></li
+    ></a>
+    <a
+      href="https://steamcommunity.com/id/sicCeline/"
+      class="nav-link text-dark"
+      ><li class="nav-item bi-steam" style="font-size: 2rem"></li
+    ></a>
+    <a
+      href="https://www.linkedin.com/in/celine-chan-179a572b/"
+      class="nav-link text-dark"
+      ><li class="nav-item bi-linkedin" style="font-size: 2rem"></li
+    ></a>
+  </ul>
+</footer>
+
+    <!--</div>-->
+
+    <script>
+      function dark() {
+        let element = document.body;
+        element.classList.toggle("dark");
+      }
+
+      $(document).ready(function () {
+        // Transition effect for navbar
+        $(window).scroll(function () {
           // checks if window is scrolled more than 500px, adds/removes solid class
-          if($(this).scrollTop() > 200) { 
-              $('.navbar').addClass('solid');
+          if ($(this).scrollTop() > 100) {
+            $(".navbar").addClass("solid");
           } else {
-              $('.navbar').removeClass('solid');
+            $(".navbar").removeClass("solid");
           }
         });
-});
-
-  </script>
-  </body>   
+      });
+    </script>
+  </body>
 </html>
-
-

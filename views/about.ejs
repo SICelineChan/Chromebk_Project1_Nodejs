@@ -33,18 +33,20 @@
       <main class="py-xxl-5 mb-xl-8 text-center">
         <div class="col-lg-8 mx-auto p-4 py-md-5 text-center">
           <h1 class="pb-3 mb-1 border-bottom">About me</h1>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-            <button class="darkBtn" onclick="dark()">
-              <i class="bi bi-moon moon"></i>
-            </button>
-          </div>
 
           <section class="py-5 text-center container">
             <div class="col-lg-6 col-md-4 mx-auto">
               <img src="images/mecc.png" class="myself" alt="myself" />
             </div>
           </section>
-          <p class="lead text-muted border-bottom">A little introduction...</p>
+          <div>
+            <h2 class="lead text-muted border-bottom">
+              A little introduction...
+            </h2>
+            <button class="darkBtn text-end" onclick="dark()">
+              <i class="bi bi-moon moon"></i>
+            </button>
+          </div>
           <p class="fs-5 col-md-12 text-xl-start">
             My interest to code began when I was a superuser to manage a
             database. Since then, I have taken different coding courses and dip
@@ -55,7 +57,7 @@
             this website has evolved from testing backend data, until now, a bit
             more complex with a blog.
           </p>
-          <p>
+          <p class="fs-5 col-md-12 text-xl-start">
             There will be more features to be added. In so far, this has been my
             own personal project. There is a working blog and more advanced CSS.
             I hope to bring more animations and a map function in the coming
@@ -102,6 +104,18 @@
         let element = document.body;
         element.classList.toggle("dark");
       }
+
+      $(document).ready(function () {
+        // Transition effect for navbar
+        $(window).scroll(function () {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if ($(this).scrollTop() > 300) {
+            $(".navbar").addClass("solid");
+          } else {
+            $(".navbar").removeClass("solid");
+          }
+        });
+      });
     </script>
   </body>
 </html>
