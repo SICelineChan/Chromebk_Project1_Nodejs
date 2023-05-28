@@ -1,13 +1,14 @@
 body{
+  background-color: #fff2f2;
   height: 100%;
-  font-family: 'Trocchi', serif;
+  font-family: 'Puritan', sans-serif;
 }
 .container-fluid{
-  margin: 0% 3%;
+  margin: 1% 2%;
 }
 
 h3 {
-  font-family: 'Cormorant', serif;
+  font-family: 'Trocchi', serif;
   color:#2183a7;
 }
 a, li {
@@ -15,17 +16,17 @@ a, li {
     text-decoration:none; 
     cursor:pointer; 
 }
-.nav-item:hover {
-  color: #51e8b6;
+.navbar a:hover, .nav-item:hover, ul li a:hover {
+  color: #74D4C0;
 }
-.nav-item {
+.nav-item { 
   margin: 2% 1% 3% 4%;
+  
 }
-.nav a {
-  padding: 6%;
-}
+
 .navbar a{
   font-family: 'Cormorant', serif;
+  color: #DEF4F0;
   font-size: 2.5rem;
   font-weight: 700;
   height: 50px;
@@ -48,8 +49,8 @@ transition: background-color 1s ease 0s;
 
        > li {
           > a {
-            color: #ab47bf;
-            font-size: 2.8rem;
+            color: #DEF4F0;
+            font-size: 2.5rem;
             transition: color 1s ease 0s;
           }
        } 
@@ -57,7 +58,7 @@ transition: background-color 1s ease 0s;
 }
 
 .header-image {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   background-image: url(/images/mountain.jpg);
   background-repeat: no-repeat;
@@ -65,16 +66,33 @@ transition: background-color 1s ease 0s;
   background-position: top center;
   
 }
+img{
+  background-color: #fff2f2;
+  position: relative;
+
+}
+.heading-subtext{
+  font-family: 'Puritan', sans-serif;
+  mix-blend-mode: color-dodge;
+  font-size: 10rem;
+  color: #e6de3d;
+  position: absolute;
+  right: 2%;
+  text-align: end;
+  z-index: 1;
+}
+
+
 .mainTitle{
   position: relative;
   text-align: center;
-  padding-top: 6%;
+  padding-top: 9%;
   mix-blend-mode: color-dodge;
   font-size: 24rem;
   font-family: 'Allura', cursive;
   color: #e6de3d;
   -webkit-text-stroke: 1px grey;
-  transform: rotateZ(-10deg)
+  transform: rotateZ(-5deg)
 }
 
 .box1 {
@@ -90,7 +108,6 @@ transition: background-color 1s ease 0s;
   background: none;
   border: none;
   text-align: center;
-  padding: 1px;
 
 }
 .dark {
@@ -124,14 +141,28 @@ transition: background-color 1s ease 0s;
 }
 .container-fluid{
 padding: 2% 5%;
-margin: 2%;
+
+}
+.navbar a, .nav-link, li a, .nav-item{
+  padding: 2% 4%;
+  font-size: 1.3rem;
 }
 
 .mainTitle {
   position: relative;
   text-align: center;
   mix-blend-mode: color-dodge;
-  font-size: 4rem
+  font-size: 4.2rem
+}
+
+.heading-subtext {
+  font-family: 'Puritan', sans-serif;
+  mix-blend-mode: color-dodge;
+  font-size: 3rem;
+  color: #e6de3d;
+  position: absolute;
+  right: 12%;
+  z-index: 1;
 }
 
 }
@@ -139,7 +170,7 @@ margin: 2%;
 menu {
   font-family: 'Cormorant', serif;
   font-size: 1.5rem;
-  padding: 20px;
+  padding: 5px;
   text-decoration: none;
   
 }
@@ -147,31 +178,23 @@ ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 0;
   padding: 0;
 }
 ul li {
+  font-size: 2rem;
   display: inline-block;
   text-decoration: none;
 }
 menu ul li:hover {
-  font-size: 2.2rem;
-  transition: color 1s ease-in-out 0s;
-  border-bottom: #51e8b6 solid 2px;
+  font-size: 2rem;
+  overflow: hidden;
+  animation-duration: 5s ;
+  transition: color 5s ease-in-out 0s;
   
 }
-ul li:hover ul {
-  display: block;
-}
-ul li ul {
-  position: absolute;
-  width: 200px;
-  display: none;
-}
-ul li ul li {
-  background: green;
-  display: block;
-}
+
+
 
 

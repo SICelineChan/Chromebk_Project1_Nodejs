@@ -10,26 +10,6 @@
     <title>mongo db testing page</title>
     
 </head>
-<style>
-  body {
-  background: linear-gradient(-45deg, #e9df93, #e5a448, #36bff0, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 6s ease infinite;
-  height: 100vh;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-</style>
 
 <body class="d-flex h-100 text-center">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -37,10 +17,11 @@
     
 
     <main class="container-fluid lead py-xxl-5 mb-xl-4 text-center">
-        <h2>Data from a local JSON file</h2>
-        <h5>My rest API is currently available on - <a href="/mongo">MongoDB</a></h5> 
-        <p>This page has a bit of a funky color, but this will be the feeling of travelling to all these places.</p>
-        
+
+        <h2>Database page</h2>
+        <br>
+        <p>This database page contains a link to my rest API and data from a local JSON file. Read a bit on <a href="/about">About </a>to understand why I included this here.</p>
+        <p>My rest API is currently available on - <a href="/mongo">MongoDB</a></p> 
         
         <div class="d-flex row mb-2 py-2 mb-3 justify-content-center">
             <div class="col-md-4">
@@ -51,7 +32,7 @@
                   <div class="container-sm d-flex justify-content-center">
                     <ol class="list-group list-group-numbered">
                     <% for (let i = 0; i < places.length; i++) {  %>
-                        <li class="list-group-item list-group-item-action list-group-item-dark"><a href="./info?index=<%=i%>"><%=places[i].city %></li></a>   
+                        <li class="list-group-item list-group-item-action list-group-item"><a href="./info?index=<%=i%>"><%=places[i].city %></li></a>   
                     <% } %>
                 </ol>
                 </div>
@@ -70,6 +51,12 @@
 
     <%- include("partials/footer.ejs") %>
 </div>
+<script>
+  function dark() {
+    let element = document.body;
+    element.classList.toggle("dark");
+  }
+  </script>
 </body>
 
 </html>
